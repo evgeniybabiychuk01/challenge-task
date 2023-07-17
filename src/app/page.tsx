@@ -15,7 +15,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [data, setData] = useState<Response | null>(null);
-  const [value, setValue] = useState(undefined);
+  const [value, setValue] = useState('');
 
   console.log(isLoading, "isLoading");
   const fetchData = async () => {
